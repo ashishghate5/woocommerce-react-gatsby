@@ -2,74 +2,74 @@ import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 //import GetProduct from "../../../queries/GetProducts";
 
-const GET_PRODUCTS = gql`
-query GET_PRODUCTS( $include: Int! ){
-products(where: {categoryId: $include}) {
-  edges {
-    node {
-      id
-      productId
-      type
-      link
-      image {
-        id
-        altText
-        sourceUrl
-      }
-      ... on SimpleProduct {
-        id
-        name
-        price
-      }
-      ... on VariableProduct {
-        id
-        name
-        price
-      }
-      ... on ExternalProduct {
-        id
-        name
-        price
-        externalUrl
-      }
-      ... on GroupProduct {
-        id
-        name
-        products {
-          nodes {
-            ... on SimpleProduct {
-              id
-              name
-              price
-            }
-          }
-        }
-      }
-    }
-  }
-}
-}
-`;
+// const GET_PRODUCTS = gql`
+// query GET_PRODUCTS( $include: Int! ){
+// products(where: {categoryId: $include}) {
+//   edges {
+//     node {
+//       id
+//       productId
+//       type
+//       link
+//       image {
+//         id
+//         altText
+//         sourceUrl
+//       }
+//       ... on SimpleProduct {
+//         id
+//         name
+//         price
+//       }
+//       ... on VariableProduct {
+//         id
+//         name
+//         price
+//       }
+//       ... on ExternalProduct {
+//         id
+//         name
+//         price
+//         externalUrl
+//       }
+//       ... on GroupProduct {
+//         id
+//         name
+//         products {
+//           nodes {
+//             ... on SimpleProduct {
+//               id
+//               name
+//               price
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// }
+// `;
 
 function ResultSection(props) {
-  const categoryId = props.catId;
-  console.log(categoryId);
+//   const categoryId = props.catId;
+//   console.log(categoryId);
  
 
-  const { loading, error, data } = useQuery(GET_PRODUCTS, {
-    variables: { 
-      include: categoryId 
-    }
-  });
-  if (loading) return null;
-  if (error) return `Error! ${error}`;
+//   const { loading, error, data } = useQuery(GET_PRODUCTS, {
+//     variables: { 
+//       include: categoryId 
+//     }
+//   });
+//   if (loading) return null;
+//   if (error) return `Error! ${error}`;
 
   //console.log(JSON.stringify(GetProductList));
   return (
     <>
-    <pre>
+    {/* <pre>
       {JSON.stringify(data)}
-    </pre>
+    </pre> */}
     <section className="result-sec">
       <div className="container">
         <div className="row ">

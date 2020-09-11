@@ -19,10 +19,9 @@ const ProductCategory = props => {
   return (
     <>
       <Layout>
-        <h1>Category Page</h1>
-      {/* <Filters /> */}
-      <ResultSection catId={CategoryData.node.databaseId} />
-      {/* <Categories />   */}
+      <Filters />
+      <ResultSection />
+      <Categories catId={CategoryData.node.databaseId}/>  
       </Layout>
     </>
   );

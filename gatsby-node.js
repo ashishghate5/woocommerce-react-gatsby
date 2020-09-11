@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
            path: `/product/${product.node.slug}`,
            component: SingleProductPage,
            context:{
-               
+              productId: product
            }
        })
    })

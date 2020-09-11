@@ -1,4 +1,5 @@
 import React from 'react';
+import { useQuery, gql } from '@apollo/client';
 import flag3Img from "../../../../assets/images/flag3.jpg"
 import truckImg from "../../../../assets/images/truck.png"
 import panierItem1Img from "../../../../assets/images/panier_item1.png"
@@ -8,7 +9,44 @@ import downloadImg from "../../../../assets/images/download.png"
 import shareImg from "../../../../assets/images/share.png"
 import deliveImg from "../../../../assets/images/deliv.png"
 
-function MainProductSection() {
+const GET_PRODUCT = gql`
+query GET_PRODUCT( $include: ID! ){
+  product(id: $include) {
+    id
+    name
+    description
+    image {
+      link
+    }
+    ... on SimpleProduct {
+      id
+      name
+      price
+    }
+    ... on VariableProduct {
+      id
+      name
+      price
+    }
+    ... on ExternalProduct {
+      id
+      name
+      price
+      externalUrl
+    }
+  }
+}
+`;
+function MainProductSection(props) {
+  const productId = props.productId;
+  const { loading, error, data } = useQuery(GET_PRODUCT, {
+    variables: { 
+      include: productId 
+    }
+  });
+  if (loading) return null;
+  if (error) return `Error! ${error}`;
+  console.log("##########SINPROD:", data)
   return (
     <div className="row">
       <div className="col-md-8 col-lg-8">
@@ -18,7 +56,7 @@ function MainProductSection() {
         <div className="row">
           <div className="col-md-12 col-12">
             <div className="product-img-singlr">
-              <img className="img-fluid" src={panierItem2Img} />
+              <img className="img-fluid" src={data['product']['image']['link']} />
               <div className="made-by-flag">
                 <img src={flag3Img} alt="" />
                 <span>Made in France</span>
@@ -56,18 +94,13 @@ function MainProductSection() {
       <div className="col-md-5 col-lg-4">
         <div className="row">
           <div className="col-md-12">
-            <h2>Robe à imprimés</h2>
+            <h2>{data['product']['name']}</h2>
           </div>
           <div className="col-md-12">
-            <p className="pera5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida lorem diam
-              arcu, scelerisque. Amet turpis odio malesuada sagittis etiam maecenas gravida. Egestas
-              fusce odio aliquet nisi, bibendum nulla tincidunt mauris, neque. Nullam nisl aliquet
-              ultrices iaculis massa et in sagittis. Urna lacus at ultricies placerat turpis ultrices
-              rhoncus libero.
-            </p>
+            <p className="pera5">{data['product']['description']}</p>
           </div>
           <div className="col-md-12">
-            <h4>12,99€</h4>
+            <h4>{data['product']['price']}</h4>
           </div>
           <div className="col-md-12"><small>Couleur </small></div>
           <div className="col-md-12">

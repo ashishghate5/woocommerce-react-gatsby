@@ -4,7 +4,7 @@ import Product from "./Product/Product"
 function Products() {
   var values = [1, 2, 3]
   var newProduct = values.map(function(value){
-    return < Product />;
+    return < Product key={value}/>;
   })
   return (
     <section className="products1">

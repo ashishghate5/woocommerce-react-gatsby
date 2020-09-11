@@ -3,11 +3,11 @@ import MobileBlock from "../components/SingleProduct/MobileBlock/MobileBlock"
 import ProductSection from "../components/SingleProduct/ProductSection/ProductSection"
 import FavoriteProducts from "../components/SingleProduct/FavoriteProducts/FavoriteProducts"
 
-const SingleProduct = () => {
+const SingleProduct = (props) => {
   return (
     <>
       <MobileBlock />
-      <ProductSection />
+      <ProductSection productId={props['pageContext']['productId']['node']['id']}/>
       <FavoriteProducts />
     </>
   );
