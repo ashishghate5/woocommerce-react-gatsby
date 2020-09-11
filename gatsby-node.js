@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             id
+            databaseId
             name
             parentId
             slug
@@ -62,8 +63,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: category.node.uri,
         component: CategoryPage,
         context: {
-            slug : category.node.slug,
-            name : category.node.name
+            CategoryData: category
         },
     })
    })
