@@ -1,6 +1,9 @@
 import React from 'react';
+import { useQuery} from '@apollo/client';
+import GetProduct from "../../../queries/GetProducts";
 
-function ResultSection() {
+function ResultSection(props) {
+  console.log("Result Section " + props.slug);
   return (
     <section className="result-sec">
       <div className="container">

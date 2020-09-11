@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import truckImg from "../../../assets/images/truck.png"
 
 const TopSection = () => {
@@ -15,7 +16,9 @@ const TopSection = () => {
               <h2>Nouveautés</h2>
             </div>
             <div className="shop-now-btn">
-              <a href="#" title="shop now">shop now</a>
+              <Link  key={'non-classe'} to="/categorie-produit/robes/">
+                shop now
+              </Link>
             </div>
           </div>
         </div>
