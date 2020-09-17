@@ -635,26 +635,26 @@ ul.color-select { margin: 0 -5px; }
 ul.size { margin: 0 -8px; }
 .recher-prod button.shop-btn.Valider { width: 181px; padding: 17px; }
 .recher-color1 span{
-    background: #EF57D6;
 border-radius: 5px;
 width: 30px;
 height: 30px;
 display: inline-block;
 }
 .recher-color2 span{
-    background: #1EC2DD;
+    /* background: #1EC2DD; */
 border-radius: 5px;
 width: 30px;
 height: 30px;
 display: inline-block;
 }
+
 .recher-color3 span{
     background: #F2B3C2;
 border-radius: 5px;
 width: 30px;
 height: 30px;
 display: inline-block;
-}
+} 
 .para3{
     font-weight: 600;
 font-size: 14px;

@@ -25,32 +25,32 @@ function Footer () {
             <div className="row">
               <div className="col-sm-4  hide-mobile">
                 <ul className="footer-links">
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
                 </ul>
               </div>
               <div className="col-sm-4 hide-mobile">
                 <ul className="footer-links">
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
                 </ul>
               </div>
               <div className="col-sm-4">
                 <ul className="footer-links">
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
-                  <li><a href="#" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
+                  <li><a href="index.html" title="Lorem Ipsum">Lorem Ipsum</a></li>
                 </ul>
               </div>
             </div>
@@ -58,9 +58,9 @@ function Footer () {
         </div>
         <div className="social-media">
           <ul className="flexbox">
-            <li><a href="#" title="instagram"><img src={instagramImg} alt="instagram" /></a></li>
-            <li><a href="#" title="facebook"><img src={facebookImg} alt="facebook" /></a></li>
-            <li><a href="#" title="tiktok"><img src={tiktokImg} alt="tiktok" /></a></li>
+            <li><a href="index.html" title="instagram"><img src={instagramImg} alt="instagram" /></a></li>
+            <li><a href="index.html" title="facebook"><img src={facebookImg} alt="facebook" /></a></li>
+            <li><a href="index.html" title="tiktok"><img src={tiktokImg} alt="tiktok" /></a></li>
           </ul>
         </div>
       </div>

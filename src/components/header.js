@@ -19,7 +19,7 @@ function Header() {
     <header>
       <div className="topbar">
         <div className="container">
-          <a href="#" title="Discount">RÉDUCTION -30% SUR TOUT LE SITE CODE : ANAE30 <span className="hide-mobile">
+          <a href="index.html" title="Discount">RÉDUCTION -30% SUR TOUT LE SITE CODE : ANAE30 <span className="hide-mobile">
               OFFRE DISPONIBLE JUSQU’AU
               10.05/2020</span></a>
         </div>
@@ -46,9 +46,9 @@ function Header() {
               </a>
               <img src={downChevImg} alt="dropdown arrow" />
               <ul>
-                <li><a href="#" title="Vêtements">Vêtements</a></li>
-                <li><a href="#" title="Accessoires">Accessoires</a></li>
-                <li><a href="#" title="Chaussures">Chaussures</a></li>
+                <li><a href="index.html" title="Vêtements">Vêtements</a></li>
+                <li><a href="index.html" title="Accessoires">Accessoires</a></li>
+                <li><a href="index.html" title="Chaussures">Chaussures</a></li>
               </ul>
             </li>
             <li className="dropdown-custom">
@@ -68,7 +68,7 @@ function Header() {
           </ul>
           <ul className="flexbox">
             <li><a href="login.html" title="Whishlist"><img src={heartImg} alt="Heart" /></a></li>
-            <li className="mobile-block"><a href="#" title="search"><img src={searchWhiteImg} alt="search" /></a></li>
+            <li className="mobile-block"><a href="index.html" title="search"><img src={searchWhiteImg} alt="search" /></a></li>
             <li><a href="mon-compte-acceuil.html" title="User"><img src={userImg} alt="User" /></a></li>
             <li><a href="panier.html" title="Cart"><img src={cartImg} alt="Cart" /></a></li>
           </ul>
@@ -93,9 +93,9 @@ function Header() {
               </a>
               <img src={arrowExpandImg} alt="dropdown arrow" />
               <ul>
-                <li><a href="#" title="Vêtements">Vêtements</a></li>
-                <li><a href="#" title="Accessoires">Accessoires</a></li>
-                <li><a href="#" title="Chaussures">Chaussures</a></li>
+                <li><a href="index.html" title="Vêtements">Vêtements</a></li>
+                <li><a href="index.html" title="Accessoires">Accessoires</a></li>
+                <li><a href="index.html" title="Chaussures">Chaussures</a></li>
               </ul>
             </li>
             <li className="dropdown-custom">
